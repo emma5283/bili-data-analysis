@@ -12,7 +12,7 @@ st.set_page_config(page_title="B站历史深度数据看板", layout="wide")
 @st.cache_data
 def load_data():
     # 读取数据
-    df = pd.read_excel(r"C:\Users\33397\Desktop\videoinfo.xlsx")
+    df = pd.read_excel("videoinfo.xlsx")
     # 数据清洗
     df['播放数'] = pd.to_numeric(df['播放数'], errors='coerce')
     # 修正时长：将秒转为分，并处理可能的负数（归零）
