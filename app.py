@@ -87,7 +87,7 @@ word_space = " ".join(words)
 if word_space:
     # 注意：Windows 路径通常为 C:/Windows/Fonts/simhei.ttf
     wc = WordCloud(
-    font_path="STSONG.ttf", 
+    font_path="STSONG.TTF", 
     width=1200, 
     height=500, 
     background_color="white"
