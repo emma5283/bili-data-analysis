@@ -86,7 +86,12 @@ word_space = " ".join(words)
 
 if word_space:
     # 注意：Windows 路径通常为 C:/Windows/Fonts/simhei.ttf
-    wc = WordCloud(font_path="C:/Windows/Fonts/simhei.ttf", width=1200, height=500, background_color="white").generate(word_space)
+    wc = WordCloud(
+    font_path="STSONG.ttf", 
+    width=1200, 
+    height=500, 
+    background_color="white"
+).generate(word_space)
     fig_wc, ax = plt.subplots(figsize=(10, 4))
     ax.imshow(wc, interpolation='bilinear')
     ax.axis("off")
